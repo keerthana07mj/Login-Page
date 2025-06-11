@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=2.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>LOGIN PAGE</h2>
+   <div class="auth-toggle">
+    <button onclick="setMode('email')">Email</button>
+    <button onclick="setMode('phone')">Phone</button>
+    <button onclick="setMode('username')">Username</button>
+    </div>
+
+    <form id="login-form">
+      <div id="email-login" class="auth-form">
+        <input type="email" id="email" placeholder="Enter Email" required />
+        <input type="password" id="email-password" placeholder="Enter Password" required />
+        </div>
+
+          <div id="phone-login" class="auth-form hidden">
+            <input type="tel" id="phone" placeholder="Enter Phone" required />
+            <input type="text" id="otp" placeholder="Enter OTP" required />
+         </div>
+
+        <div id="username-login" class="auth-form hidden">
+          <input type="text" id="username" placeholder="Enter Username" required />
+          <input type="password" id="username-password" placeholder="Enter Password" required />
+         </div>
+
+      <button type="submit">Login</button>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
